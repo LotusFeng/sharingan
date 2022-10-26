@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画一个写轮眼</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo2"></div>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <style>* {
+  box-sizing: border-box;
+}
+
+#buttons {
+  z-index: 10;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 10px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#buttons > button {
+  margin-bottom: 10px;
+  padding: 4px 8px;
+}
+
+#demo2 {
+  display: none;
+}
+
+#demo {
+  width: 100%;
+  height: 50vh;
+  border: 1px solid red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+#demo::-webkit-scrollbar {
+  display: none;
+}
+
+#html {
+  width: 100%;
+  height: 50vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+</style>
+    <div id="html">
+        <div class="sharingan">
+            <div class="eye"></div>
+            <div class="flower1"></div>
+            <div class="flower2"></div>
+            <div class="flower3"></div>
+            <div class="flower-line1"></div>
+            <div class="flower-line2"></div>
+            <div class="flower-line3"></div>
+            <div class="itachi-1-1">
+                <div class="itachi-1-2"></div>
+            </div>
+            <div class="itachi-2-1">
+                <div class="itachi-2-2"></div>
+            </div>
+            <div class="itachi-3-1">
+                <div class="itachi-3-2"></div>
+            </div>
+            <div class="pupil"></div>
+        </div>
+    </div>
+    <script src="/paint.6ea7174d.js" defer=""></script>
+</body>
+
+</html>
